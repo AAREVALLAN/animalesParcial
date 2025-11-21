@@ -1,0 +1,22 @@
+public abstract class Animal
+{
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+    public string Especie { get; set; }
+
+    public Animal(string nombre, int edad, string especie)
+    {
+        Nombre = nombre;
+        Edad = edad;
+        Especie = especie;
+    }
+
+    public abstract void EmitirSonido();
+
+    public virtual void MostrarInformacion()
+    {
+        Console.WriteLine($"Nombre: {Nombre}");
+        Console.WriteLine($"Edad: {Edad} años");
+        Console.WriteLine($"Especie: {Especie}");
+    }
+}
