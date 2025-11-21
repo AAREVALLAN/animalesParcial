@@ -1,0 +1,9 @@
+public class Leon : Animal
+{
+    public Leon(string nombre, int edad) : base(nombre, edad, "León") { }
+
+    public override void EmitirSonido()
+    {
+        Console.WriteLine("El león ruge: ¡Roooaaar!");
+    }
+}
