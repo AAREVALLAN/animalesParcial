@@ -1,0 +1,9 @@
+    public class Perro : Animal
+    {
+        public Perro(string nombre, int edad) : base(nombre, edad, "Perro") { }
+
+        public override void EmitirSonido()
+        {
+            Console.WriteLine("El perro dice: ¡Guau guau!");
+        }
+    }
